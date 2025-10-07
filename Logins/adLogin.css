@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    background-image: url('becky.jpg');
+    background-size:cover;
+    background-position: center;
+    color: #060606;
+    background-repeat: no-repeat;
+}
+
+#navigationBar {
+    background-color: rgb(0, 0, 0);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    display: flex;
+    padding: 0 20px;
+}
+
+#navigationBar ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+#navigationBar ul li {
+    flex-grow: 1;
+    text-align: center;
+}
+
+#navigationBar ul li a {
+    color: rgb(255, 153, 0);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+#navigationBar ul li a:hover {
+    color: rgb(255, 153, 0);
+    background-color: #505050;
+}
+
+#main {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color:  rgb(207, 124, 0);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position  : relative;
+    transform : translate(0px, 50px);
+}
+
+#topBar {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+#login-form {
+    margin-top: 20px;
+}
+
+#login-form label {
+    font-weight: bold;
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid  rgb(255, 153, 0);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#login-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#login-form button[type="submit"]:hover {
+    background-color: #555;
+}

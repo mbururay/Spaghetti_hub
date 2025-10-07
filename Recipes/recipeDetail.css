@@ -1,0 +1,106 @@
+#recipe-title {
+    color: black ;
+   }
+   
+   .body{  
+   background-image: url("background.jpg");
+   font-family: Comic Sans MS;
+     
+   }
+       
+   img{
+       
+       border: 5px solid #8e2c2c;
+       width : 500px;
+   }
+   
+   
+   #carba{
+   margin-top: 0px;
+   margin-bottom: 50px;
+   margin-right: 255px;
+   margin-left: 170px;
+   width : 900px;
+   line-height: 270%;
+     
+   color :black;
+   font-style:italic ;
+   
+          
+       
+   }
+   
+   #ingredients{
+       text-align: left;
+       margin-left : 35px;
+       margin-top : 10px;
+       background-color: antiquewhite;
+       border-radius: 5px;
+       margin-right : 40px;
+       margin-bottom : 0px;
+       height:310px;
+       position: relative;     
+       transform: translate(0px,-70px);
+   }
+   
+   #ingredients h3{
+       position: relative;     
+       transform: translate(10px,10px);
+   }
+   
+   
+   #steps{
+       text-align: left;
+       position : relative;
+       transform:translate(0px,-50px);
+      
+       margin-bottom : 0px;
+       
+       
+   
+   }
+   
+   #intro{
+       text-align: left;
+       margin-left : 35px;
+       margin-top : 10px;
+       margin-right : 40px;
+       margin-bottom : 10px;
+       
+       height:250px
+   }
+   
+   #steps h3{
+       position: relative;     
+       transform: translate(20px,0px);
+   
+   }
+   
+   
+   .spacing{
+       margin-right: 300px;
+   }
+   
+   .rick{
+       position: relative;
+       transform : translate(15px,-56px);
+       margin-left : 10px;
+       margin-top : 0px;
+       color : antiquewhite;
+       
+   }
+   
+   .scroller{
+       position : relative;
+       transform : translate(-20px ,0px);
+       color: antiquewhite;
+   
+   }
+   
+   
+   
+   a:visited{
+       color : burlywood;
+   }
+   
+   

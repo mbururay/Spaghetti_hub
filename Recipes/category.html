@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Admin User Management</title>
+    <link rel="stylesheet" type="text/css" href="preRecipe.css">
+    <style>
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        form label, form input, form button {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        form button {
+            width: auto;
+            padding: 10px 20px;
+            background-color:rgb(255, 153, 0);;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color:rgb(255, 153, 0);;
+        }
+    </style>
+  
+</head>
+<body>
+    <div id="navigationBar">
+        <ul>
+            <li><img src="logo.jpg" alt="Logo" style="height: 40px;"></li>
+            <li><a href="http://localhost/Projects/Specials/adPick.html">BACK</a></li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <div id="topBar">
+            <h2>Admin User Management</h2>
+        </div>
+        
+        <form style = "align-items: center;" method="post">
+            <label for="category">Category</label>
+            <input type="text" id="category" name="category" required>
+            
+            
+            <button  type="submit" formaction="http://localhost/Projects/Recipes/create_category.php">Create category</button>
+            
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Admin User Management</title>
+    <link rel="stylesheet" type="text/css" href="adPick.css">
+</head>
+<body>
+    <div id="navigationBar">
+        <ul>
+            <li><img src="logo.jpg" alt="Logo" style="height: 40px;"></li>
+            <li><a href="http://localhost/Projects/Specials/adPick.html">BACK</a></li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <div id="topBar">
+            <h2>Admin User Management</h2>
+        </div>
+        
+        <form method="post">
+            <label for="new_username">Username</label>
+            <input type="text" id="new_username" name="new_username" required>
+            
+            <button type="submit" formaction="http://localhost/Projects/Specials/delete/delete_user.php">Delete User Account</button>
+            <button type="submit" formaction="http://localhost/Projects/Specials/delete/delete_rep.php">Delete Recipe Owner Account</button>
+            <button type="submit" formaction="http://localhost/Projects/Specials/delete/delete_admin.php">Delete Administrator Account</button>
+        </form>
+    </div>
+</body>
+</html>

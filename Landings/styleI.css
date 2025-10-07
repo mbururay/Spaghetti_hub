@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    color : rgb(255, 153, 0);
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color : rgb(255, 153, 0);
+}
+
+/* Full background settings */
+
+
+.foldNav {
+    background-image: url('spagss.jpg');
+    background-size:cover;
+    background-position: center;
+    color: #060606;
+    background-repeat: no-repeat;
+}
+
+/* Navigation bar styling */
+#navigationBar {
+    background-color: rgb(0, 0, 0);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    display: flex;
+    padding: 0 20px;
+}
+
+#navigationBar ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+#navigationBar ul li {
+    flex-grow: 1;
+    text-align: center;
+}
+
+#navigationBar ul li a {
+    color: rgb(255, 153, 0);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+#navigationBar ul li a:hover {
+    color: rgb(255, 153, 0);
+    background-color: #505050;
+}
+
+        /* Content and alignment for main sections */
+        #aboveTheFold, #belowTheFold {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-bottom: 500px;
+            
+        }
+
+        #aboveTheFold {
+            min-height: 100vh;
+            flex-direction: column;
+            align-content: space-between;
+            animation-name: slideInFromRight;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+
+            
+        }
+
+        #list1{
+            font-weight: bolder; 
+            line-height: 40px; 
+            color :rgb(255, 153, 0); 
+            font-size: 40px;
+            
+            padding-bottom:70px;
+        }
+
+        #aboveTheFold a, #belowTheFold a {
+            padding: 10px 20px;
+            background-color:rgb(255, 153, 0);
+            border-radius: 5px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        #aboveTheFold a:hover, #belowTheFold a:hover {
+            background-color: rgb(255, 153, 0);
+        }
+
+        #belowTheFold {
+            background-color:#000000;
+            /*display: flex;*/
+            gap: 10rem;
+            padding-top: 120px; 
+            align-items: top;
+            min-height: 450px;
+            animation-name: example;
+            animation-duration: 4s;
+            padding-bottom : 150px;
+            font-weight: bolder;
+            
+            
+        }
+
+        #belowTheFold h1{
+            align-items: top;
+            color:black;
+
+        }
+
+
+
+
+        #spaghettiBolo{
+            width : 40%;
+            display: flex;
+            flex-direction : column;
+            justify-content: right;
+            align-items: top;
+            height : 200px;
+            padding-top : 5px;
+            padding-left : 0px;
+            padding-right : 0px;
+            line-height: 50px;
+            padding-bottom:0px;
+            animation-name: slideInFromRight;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+           
+        }
+
+        #spaghettiCarbo{
+            width : 40%;
+            display: flex;
+            flex-direction : column;
+            justify-content: center;
+            align-items: top;
+            height : 300px;
+            padding-top : 0px;
+            padding-left : 0px;
+            padding-right : 0px;
+            line-height: 50px;
+            flex-wrap: wrap;
+                      
+            
+            
+           
+        }
+
+        #Testimonials{
+            
+            flex-direction: row;
+            display: flex;
+            display: flex;          /* Establishes a flex container */
+            justify-content: space-between; /* Equally spaces the child elements */
+            align-items: stretch;   /* Stretches the children to fill the container vertically */
+            min-height: 120vh;  
+            background-color: rgb(255, 153, 0);
+            padding: 20px;
+            justify-content: space-around;        /* Optional: sets the height of the container */
+        }
+
+
+        #Walter-White{
+            background-color:rgb(0, 0, 0);
+            gap: 10rem;
+            padding : 20px; 
+            align-items: top;
+            height: 450px;
+            animation-name: example;
+            animation-duration: 4s;
+            padding-bottom : 150px;
+            font-weight: bolder;
+            width: 60%;
+            
+        }
+
+        #Saul{
+            background-color:rgb(0, 0, 0);
+            gap: 10rem;
+            padding : 20px; 
+            align-items: top;
+            height: 450px;
+            animation-name: example;
+            animation-duration: 4s;
+            padding-bottom : 150px;
+            font-weight: bolder;
+            width: 60%;
+        }
+
+        #Gus{
+            background-color: rgb(0, 0, 0);
+            gap: 10rem;
+            padding : 20px; 
+            align-items: top center;
+            height: 450px;
+            
+            padding-bottom : 150px;
+            font-weight: bolder;
+            width: 60%;
+            
+        }
+
+
+
+        /* Footer or additional content styling */
+        #rick {
+            /*min-height: 50vh; /* Adjust based on content */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #444; /* Example background color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @keyframes slideInFromRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        #Testimonials div {
+            margin: 10px;
+            padding: 20px;
+            background: rgb(0, 0, 0);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+     
+
+     
